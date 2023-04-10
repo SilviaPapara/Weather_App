@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  margin: 20px auto 0;
+  gap: 10%;
+}
+
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  color: #fff;
+  width: 40%;
+  outline: 1px solid white;
+  text-align: center;
+  height: 350px;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  outline: 1px solid white;
+  color: rgb(239, 239, 239);
+  width: 40%;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.iconAndTemp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.searchBar {
+  all: unset;
+  width: 200px;
+  height: 25px;
+  padding: 10px 10px;
+  font-family: "Inter", sans-serif;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid white;
+}
+
+input::placeholder {
+  opacity: 0.9;
+  color: rgb(244, 244, 244);
+}
+
+.searchIcon {
+  cursor: pointer;
+  width: 25px;
+  height: 37.5px;
+  filter: invert();
+  border-bottom: 1px solid black;
+  padding-right: 10px;
+}
+
+.searchBtn {
+  all: initial;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+
+.icon {
+  width: 13%;
+  height: auto;
+  object-fit: contain;
+  filter: invert();
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weekContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.weatherDay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  outline: 1px solid white;
+  padding: 25px;
+  width: 150px;
+  height: 160px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.detailsContainer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 5px;
+}
+
+@media (max-width: 700px) {
+  .page,
+  .weekContainer {
+    flex-direction: column;
+  }
+  .container1 {
+    outline: none;
+    margin-top: 30px;
+  }
+  .container2 {
+    width: 200px;
+    margin-top: 30px;
+  }
+}
